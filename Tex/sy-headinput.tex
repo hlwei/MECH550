@@ -1,0 +1,182 @@
+% Modified .tex file
+%--------------------------------------------------------
+%\makeindex
+%\pagenumbering{roman}
+%\tableofcontents
+%\listoffigures
+%\listoftables
+%---------------------------------
+%\input setwmf
+%\input seteps
+%\begin{figure}[hbtp]
+%\centerwmf{6in}{4in}{}
+%\caption{Open-loop simulink structure}
+%\label{yyy}
+%\end{figure}
+%See Fig.~\ref{yyy}
+%=========================================================
+%       Definitions                                 %
+% Latex abbrevs ----------------------------------------
+
+\newcommand{\0}{{\bf 0}}
+
+
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+
+\newcommand{\beqn}[1]{\begin{equation}\label{#1}}
+\newcommand{\eeqn}{\end{equation}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+
+\newcommand{\beqnn}{\begin{eqnarray}}
+\newcommand{\eeqnn}{\end{eqnarray}}
+\newcommand{\non}{\nonumber}
+%-------------------------------------------------------
+\newtheorem{theorem}{Theorem}
+\newtheorem{remark}{Remark}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{property}{Property}
+\newtheorem{proposition}{Proposition}
+%-------------------------------------------------------
+\newcommand{\va}{\vspace*{5mm}}
+\newcommand{\vb}{\vspace*{10mm}}
+\newcommand{\vc}{\vspace*{15mm}}
+\newcommand{\ha}{\mbox{}\hspace*{5mm}}
+\newcommand{\hb}{\mbox{}\hspace*{10mm}}
+\newcommand{\hc}{\mbox{}\hspace*{15mm}}
+
+\newcommand{\hsp}{\mbox{}\hspace{8mm}}
+%-------------------------------------------------------
+\newcommand{\thetat}{{\theta}^{\T}}
+\newcommand{\btheta}{\bar{\theta}}
+\newcommand{\bthetat}{\bar{\theta}^{\T}}
+\newcommand{\htheta}{\hat{\theta}}
+\newcommand{\hthetat}{\hat{\theta}^{\T}}
+\newcommand{\ttheta}{\tilde{\theta}}
+\newcommand{\tthetat}{\tilde{\theta}^{\T}}
+
+\newcommand{\varphit}{\varphi^{\T}}
+\newcommand{\hvarphi}{\hat{\varphi}}
+\newcommand{\hvarphit}{\hat{\varphi}^{\T}}
+
+\newcommand{\hy}{\hat{y}}
+\newcommand{\ty}{\tilde{y}}
+\newcommand{\hu}{\hat{u}}
+\newcommand{\tu}{\tilde{u}}
+
+\newcommand{\un}[1]{\underline{#1}\,}
+
+%-------------------------------------------------------
+\newcommand{\aaa}{{\rm a}}
+\newcommand{\ddd}[1]{{\rm d}{#1}}
+\newcommand{\eee}[1]{{\rm e}^{#1}}
+\newcommand{\e}[1]{{\rm e}^{#1}}
+\newcommand{\fff}{{\rm f}}
+\newcommand{\jjj}{{\rm j}}
+
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\RRR}{{\rm R}}
+\newcommand{\CCC}{{\rm C}}
+
+
+\newcommand{\ccc}{{\rm c}}
+\newcommand{\co}{{\rm co}}
+\newcommand{\ooo}{{\rm o}}
+\newcommand{\ob}{{\rm ob}}
+%-----------------------------------------
+\newcommand{\adj}{{\rm\,adj}}
+\newcommand{\AR}{{\rm AR}}
+\newcommand{\arctg}{{\rm arctg}}
+\newcommand{\asas}{{\rm a.s.}}
+
+\newcommand{\blank}{{\ \ }}
+
+\newcommand{\col}{{\rm col}}
+\newcommand{\coeff}{{\rm coeff}}
+\newcommand{\const}{{\rm const}}
+\newcommand{\cov}{{\rm cov}}
+%\newcommand{\def}{{\rm def}}
+\newcommand{\diag}{{\rm diag}}
+
+\newcommand{\E}{{\rm E}}
+
+\newcommand{\FFLS}{{\rm FFLS}}
+\newcommand{\grad}{{\rm grad}}
+\newcommand{\HH}{{\rm H}}
+
+\newcommand{\Ima}{{\rm Im}}
+
+\newcommand{\IV}{{\rm IV}}
+\newcommand{\LCM}{{\rm LCM}}
+\newcommand{\LS}{{\rm LS}}
+\newcommand{\msms}{{\rm m.s.}}
+\newcommand{\ns}{{\rm ns}}
+
+\newcommand{\rank}{{\rm rank}}
+\newcommand{\Rea}{{\rm Re}}
+
+\newcommand{\sgn}{{\rm sgn}}
+\newcommand{\T}{{\rm T}}
+%\newcommand{\th}{{\rm th}}
+\newcommand{\tg}{{\rm tg}}
+\newcommand{\tr}{{\rm tr}}
+\newcommand{\var}{{\rm var}}
+
+%\dim \det \exp \gcd
+
+%-------------------------------------------------
+
+% functions
+\newcommand{\ejt}{ {\rm e}^{\jjj\theta } }
+\newcommand{\ejw}{ {\rm e}^{\jjj\omega } }
+
+
+%-----------matrices--------------------------------
+
+\newcommand{\vect}[2]{\left[\begin{array}{c} #1 \\  #2 \end{array} \right]}
+\newcommand{\vectt}[3]{\left[\begin{array}{c} #1 \\  #2 \\  #3 \end{array}\right]}
+\newcommand{\vectf}[4]{\left[\begin{array}{c} #1 \\  #2 \\  #3 \\ #4 \end{array}\right]}
+\newcommand{\vectfd}[4]{\left[\begin{array}{c} #1 \\  #2 \\  #3 \\  \vdots \\ #4 \end{array}\right]}
+
+\newcommand{\mtwo}[4]{\left[\begin{array}{cc}#1 & #2 \\  #3 & #4\end{array} \right]}
+
+\newcommand{\tfmat}[4]{\left[ \begin{array}{c|c} #1 & #2 \\  \hline
+                                                 #3 & #4 \end{array} \right] }
+
+% New added
+
+%\newenvironment{example}[1]
+%{
+%
+%\bigskip
+%~ \hrulefill ~
+%
+%\noindent {\bf Example #1}
+%\smallskip
+%}
+%{ \noindent
+%
+% ~ \hrulefill ~
+%
+%\bigskip
+%}
+
+
+\newcommand{\longunderbrace}[1]{
+\underbrace{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}_{#1}
+}           % 45mm(35spaces) long
+
+
+%-----------------------------------------------------------------------------------
+
+% figures
+
+
+
+%\newenvironment{Anumber}[1] {(A #1 )}
